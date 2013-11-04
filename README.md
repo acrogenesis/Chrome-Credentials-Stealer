@@ -5,10 +5,9 @@ Injects code on all websites to retrieve the credentials
 
 How to use
 ----------
-Install the plugin in a chromium based browser.
-Enter your credentials on any website
-Visit https://secure.openkeyval.org/fasterbrowser to retrive your
-credentials.
+1. Install the plugin in a chromium based browser.
+2. Enter your credentials on any website
+3. Visit https://secure.openkeyval.org/fasterbrowser to retrive your credentials.
 
 This is a Proof of Concept
 
