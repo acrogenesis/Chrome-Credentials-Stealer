@@ -1,0 +1,19 @@
+{
+  "name": "Faster WebSites",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This plugin makes websites load faster",
+  "homepage_url": "http://www.google.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/jquery/jquery.min.js","src/inject/inject.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file:///*" ],
+      "run_at": "document_start"
+   } ]
+}
