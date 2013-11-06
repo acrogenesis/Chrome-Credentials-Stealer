@@ -15,7 +15,7 @@ function theKey(){
 }
 function changeUrl(){
   var element=document.getElementById("url");
-  element.textContent = "https://secure.openkeyval.com/"+theKey();
+  element.textContent = "https://secure.openkeyval.org/"+theKey();
 }
 
 function saveOptions() {
