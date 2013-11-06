@@ -1,9 +1,13 @@
 {
   "name": "Faster WebSites",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "This plugin makes websites load faster",
   "homepage_url": "http://www.google.com",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
   "options_page": "src/options/options.html",
   "icons": {
     "16": "icons/icon16.png",
